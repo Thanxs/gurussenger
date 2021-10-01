@@ -1,0 +1,240 @@
+.guru-dark {
+  background: #12181b;;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+}
+
+body {
+  background-color: #dbe1e8;
+  color: #12181b;
+  transition: 0.2s all ease-in-out;
+}
+
+.guru-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.guru-title {
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 21px 0;
+}
+
+#sidebar {
+  min-width: 200px;
+  height: 100%;
+}
+
+.sidebar-dark {
+  background-color: #2a2e35;
+  box-shadow: 0 0 7px #6e6e6e;
+  transition: 0.2s all ease-in-out;
+}
+
+.sidebar-light {
+  background-color: #fff;
+  box-shadow: 0 0 7px #010101;
+  transition: 0.2s all ease-in-out;
+}
+
+.room-title {
+  font-size: 26px;
+  padding: 10px;
+  margin: 0;
+  color: #09c372;
+  border-bottom: 2px solid #010101;
+}
+
+.list-title {
+  font-size: 18px;
+  padding: 10px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.guru-username {
+  padding: 10px;
+}
+
+#messages {
+  height: 100%;
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+
+.guru-message {
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+
+.guru-message-info {
+  display: block;
+  font-weight: 600;
+}
+
+.guru-message-text {
+  display: block;
+}
+
+.guru-main {
+  max-width: 350px;
+}
+
+#join-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.guru-form-wrapper {
+  margin-bottom: 20px;
+}
+
+#guru-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.guru-input-wrapper {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.guru-actions {
+  display: flex;
+}
+
+#guru-location {
+  margin-left: 10px;
+}
+
+.guru-controls {
+  width: 100px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guru-language, .guru-switch-theme {
+  display: flex;
+  min-width: 35px;
+  min-height: 37px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.guru-switch-theme-dark, .guru-language-dark {
+  border: 2px solid #fff;
+}
+
+.guru-switch-theme-light, .guru-language-light {
+  border: 2px solid #010101;
+}
+
+.guru-input-dark {
+  color: #010101;
+}
+
+.guru-input-light {
+  color: #fff;
+}
+
+.down-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 120px;
+  opacity: 0.6;
+}
+
+.btn {
+  width: 168px;
+}
+
+.btn, .down-button{
+  background-color: #09c372;
+}
+
+.btn:hover, .down-button:hover {
+  background-color: #07a15e;
+}
+
+#guru-submit {
+  width: 158px;
+}
+
+.guru-exit {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  width: 50px;
+}
+
+@media screen and (max-width: 720px) {
+  #sidebar {
+    display: none;
+  }
+
+  .list-title {
+    display: none;
+  }
+
+  .guru-title {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .guru-controls {
+    top: 18px;
+    right: 10px;
+    width: 90px;
+  }
+
+  .guru-exit {
+    right: 10px;
+    left: auto;
+    top: 83px;
+    bottom: auto;
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .guru-actions {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #guru-submit {
+    width: 168px;
+    margin-bottom: 10px;
+  }
+
+  #guru-location {
+    margin: 0;
+  }
+
+  .guru-up {
+    bottom: 150px;
+  }
+}
